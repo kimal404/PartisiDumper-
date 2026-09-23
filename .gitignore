@@ -13,3 +13,4 @@
 *.jks
 *.keystore
 app/build/
+.acside/
