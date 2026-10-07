@@ -5,12 +5,21 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.animation.Crossfade
+import androidx.compose.runtime.*
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import id.dumper.parti.ui.screens.about.AboutScreen
 import id.dumper.parti.ui.screens.home.HomeScreen
 import id.dumper.parti.ui.theme.PartiDumperTheme
+
+enum class Screen {
+    HOME,
+    ABOUT
+}
 
 class MainActivity : ComponentActivity() {
 
@@ -20,7 +29,25 @@ class MainActivity : ComponentActivity() {
         requestNotificationPermission()
         setContent {
             PartiDumperTheme {
-                HomeScreen()
+                var currentScreen by remember { mutableStateOf(Screen.HOME) }
+
+                Crossfade(targetState = currentScreen, label = "ScreenTransition") { screen ->
+                    when (screen) {
+                        Screen.HOME -> {
+                            HomeScreen(
+                                onNavigateToAbout = { currentScreen = Screen.ABOUT }
+                            )
+                        }
+                        Screen.ABOUT -> {
+                            BackHandler {
+                                currentScreen = Screen.HOME
+                            }
+                            AboutScreen(
+                                onBackClick = { currentScreen = Screen.HOME }
+                            )
+                        }
+                    }
+                }
             }
         }
     }

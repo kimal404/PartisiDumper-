@@ -46,9 +46,11 @@ class HomeViewModel : ViewModel() {
         filterOnlyCritical
     ) { list, query, onlyCrit ->
         list.filter { part ->
-            val matchesQuery = query.isBlank() || part.name.contains(query.trim(), ignoreCase = true)
-            val matchesCritical = !onlyCrit || part.isCritical
-            matchesQuery && matchesCritical
+            val matchesQuery = query.isBlank() ||
+                    part.name.contains(query.trim(), ignoreCase = true) ||
+                    part.blockPath.contains(query.trim(), ignoreCase = true)
+            val matchesCrit = !onlyCrit || part.isCritical
+            matchesQuery && matchesCrit
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
