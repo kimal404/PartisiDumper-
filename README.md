@@ -36,6 +36,6 @@ PartisiDumper brings this entire workflow directly onto your phone with two vers
  * Switch between Partition Dump and OTA Extract categories.
  * Tap Verify on any file card to validate the integrity of the image against its SHA-256 hash record.
 🛠️ System Requirements
- * Android Version: Android 11+ (API 30 to Android 15+).
+ * Android Version: Android 11+ (API 30 to Android 16+).
  * Root Solution (Hardware Dump Only): KernelSU, APatch, or Magisk.
  * Architecture: ARM64 / AArch64.
