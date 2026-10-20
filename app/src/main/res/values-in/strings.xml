@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">PartisiDumper</string>
+    <string name="tab_partitions">Partisi (%1$d)</string>
+    <string name="tab_payload">OTA Payload</string>
+    <string name="tab_history">Riwayat (%1$d)</string>
+    <string name="search_placeholder">Cari partisi atau block...</string>
+    <string name="filter_all">Semua</string>
+    <string name="filter_critical">Kritis (%1$d)</string>
+    <string name="filter_multi_select">Multi-Pilih</string>
+    <string name="filter_select_mode">Mode Pilih</string>
+    <string name="btn_backup_critical">Backup Kritis (%1$d)</string>
+    <string name="btn_dump_selected">Dump %1$d Partisi (%2$s)</string>
+    <string name="btn_open_folder">Buka Folder Penyimpanan</string>
+    <string name="slot_active">Slot Aktif %1$s</string>
+    <string name="slot_non_ab">Slot Aktif Non A/B</string>
+    <string name="root_checking">Memeriksa akses root...</string>
+    <string name="root_denied_title">Akses Root Diperlukan</string>
+    <string name="root_locked_desc">Ekstraksi partisi fisik langsung dari hardware memerlukan hak akses root (KernelSU, APatch, atau Magisk). Fitur non-root tetap dapat digunakan.</string>
+    <string name="btn_grant_root">Berikan Akses Root</string>
+    <string name="btn_try_again">Coba Lagi</string>
+    <string name="partitions_not_found">Partisi tidak ditemukan</string>
+    <string name="history_empty">Belum ada file backup</string>
+    <string name="verify_not_checked">Belum diverifikasi</string>
+    <string name="verify_match">Valid (Cocok)</string>
+    <string name="verify_mismatch">KORUP!</string>
+    <string name="verify_no_hash">File hash hilang</string>
+    <string name="btn_verify">Verifikasi</string>
+    <string name="dialog_storage_title">Peringatan Storage</string>
+    <string name="dialog_storage_desc">Ukuran partisi %1$s adalah %2$s, sisa memori internal Anda sangat menipis.</string>
+    <string name="btn_dump_anyway">Tetap Dump</string>
+    <string name="btn_cancel">Batal</string>
+    <string name="btn_close">Tutup</string>
+    <string name="dump_extracting">Mengekstrak %1$s (%2$d/%3$d)</string>
+    <string name="dump_success_title">Dump Berhasil</string>
+    <string name="btn_copy_sha256">Salin SHA256</string>
+    <string name="batch_summary_title">Ringkasan Batch Dump</string>
+    <string name="batch_summary_stats">Berhasil: %1$d • Gagal: %2$d</string>
+    <string name="dump_error_title">Dump Gagal</string>
+    <string name="log_view">Lihat Log Diagnostik</string>
+    <string name="log_hide">Tutup Log</string>
+    <string name="btn_copy_log">Salin Log</string>
+
+    <!-- OTA Payload Strings -->
+    <string name="payload_empty_title">Belum Ada File Dipilih</string>
+    <string name="payload_empty_desc">Pilih file zip OTA ROM atau payload.bin untuk melihat struktur dan mengekstrak partisi tanpa akses root.</string>
+    <string name="payload_btn_choose">Pilih File</string>
+    <string name="payload_change_file">Ganti File</string>
+    <string name="payload_parsing">Menganalisis struktur paket OTA...</string>
+    <string name="payload_search_placeholder">Cari partisi payload...</string>
+    <string name="payload_btn_extract">Ekstrak %1$d Partisi (%2$s)</string>
+    <string name="payload_select_all">Pilih Semua</string>
+    <string name="payload_deselect_all">Batalkan Semua</string>
+    <string name="payload_partitions_found">%1$d Partisi ditemukan</string>
+    <string name="payload_error_title">Gagal Membaca Payload</string>
+
+    <!-- History Tab Strings -->
+    <string name="history_tab_dump">Dump Partisi (%1$d)</string>
+    <string name="history_tab_ota">Hasil OTA (%1$d)</string>
+    <string name="history_empty_dump">Belum ada file dump partisi</string>
+    <string name="history_empty_ota">Belum ada file hasil ekstrak OTA</string>
+
+    <!-- General Labels -->
+    <string name="tag_ota">OTA</string>
+    <string name="tag_critical">KRITIS</string>
+    <string name="block_path">Path Blok</string>
+    <string name="action_sync">Sinkronisasi</string>
+    <string name="action_change">Ganti</string>
+    <string name="action_delete">Hapus</string>
+    <string name="action_copy">Salin</string>
+    <string name="unknown_size">Tidak Diketahui</string>
+    <string name="dump_success_partition">Partisi: %1$s</string>
+    <string name="dump_success_file">File: %1$s</string>
+
+    <!-- About Screen -->
+    <string name="about_title">Tentang</string>
+    <string name="about_version">Versi 1.2 (Hybrid Release)</string>
+    <string name="about_support_group">Grup dukungan</string>
+    <string name="about_channel">Saluran</string>
+    <string name="about_maintainer">Maintainer</string>
+    <string name="about_maintainer_sub">Pembuat dan maintainer</string>
+    <string name="about_source_code">Sumber terbuka</string>
+    <string name="about_source_code_title">Kode sumber</string>
+    <string name="about_source_code_sub">Lihat kode sumber di GitHub</string>
+    <string name="about_language">Bahasa</string>
+    <string name="about_language_select">Pilih Bahasa</string>
+    <string name="lang_system">Ikuti Sistem</string>
+    <string name="lang_id">Bahasa Indonesia</string>
+    <string name="lang_en">English</string>
+</resources>
